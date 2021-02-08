@@ -7,12 +7,16 @@ showFile = async (input) => {
             svg.id = `barcode${i}`;
             div.append(svg)
             document.body.append(div);
-            JsBarcode(`#${svg.id}`, json[i], { fontSize: 25 });
+            JsBarcode(`#${svg.id}`, json[i], {
+                fontSize: 25,
+                margin: 0,
+                height: 75
+            });
         }
     }, e => {
         console.log('Не JSON файл!!!')
     })
-    document.body.removeChild(input)    
+    document.body.removeChild(input)
 }
 
 

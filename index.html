@@ -8,10 +8,18 @@
 
     <title>Barcode</title>
     <style>
-        @media print{
-            div{
-                page-break-after: always;
-            }
+        div {
+            page-break-after: always;
+            size: 30mm 58mm;
+            margin: 1mm;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
