@@ -25,7 +25,10 @@
 </head>
 
 <body>
-    <input type="file" class="enter" onchange="showFile(this)">
+    <form name="inputForm">
+        <input type="text" name="data">
+        <input type="button" onclick="generate(inputForm.data.value)" value="ok">
+    </form>
 </body>
 <script src="JsBarcode.code128.min.js" defer></script>
 <script src="index.js" defer></script>
